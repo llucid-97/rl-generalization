@@ -127,7 +127,7 @@ class EnvRegistry(object):
             from .time_limit import TimeLimit
             env = TimeLimit(env,
                             max_episode_steps=env.spec.max_episode_steps,
-                            max_episode_seconds=env.spec.max_episode_seconds)
+                            )
         return env
 
 
