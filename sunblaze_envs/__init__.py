@@ -12,6 +12,13 @@ register(
 )
 
 register(
+    id='SunblazeCartPole-v1',
+    entry_point='sunblaze_envs.classic_control:ModifiableCartPoleEnv',
+    max_episode_steps=500,
+    reward_threshold=475.0,
+)
+
+register(
     id='SunblazeCartPoleRandomNormal-v0',
     entry_point='sunblaze_envs.classic_control:RandomNormalCartPole',
     max_episode_steps=200,
@@ -19,10 +26,24 @@ register(
 )
 
 register(
+    id='SunblazeCartPoleRandomNormal-v1',
+    entry_point='sunblaze_envs.classic_control:RandomNormalCartPole',
+    max_episode_steps=500,
+    reward_threshold=475.0,
+)
+
+register(
     id='SunblazeCartPoleRandomExtreme-v0',
     entry_point='sunblaze_envs.classic_control:RandomExtremeCartPole',
     max_episode_steps=200,
     reward_threshold=195.0,
+)
+
+register(
+    id='SunblazeCartPoleRandomExtreme-v1',
+    entry_point='sunblaze_envs.classic_control:RandomExtremeCartPole',
+    max_episode_steps=500,
+    reward_threshold=475.0,
 )
 
 register(
